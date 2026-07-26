@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* ==========================
+   CSS VARIABLES
+========================== */
+
+:root {
+  --primary: #6b4f3b;
+  --primary-dark: #5a4231;
+  --accent: #c9a227;
+
+  --background: #f8f5f0;
+  --surface: #ffffff;
+
+  --text: #222222;
+  --text-light: #666666;
+
+  --shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  --radius: 16px;
+
+  --transition: 0.35s ease;
+}
+
+/* ==========================
+   RESET
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: var(--text);
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.navbar {
+  width: min(1100px, 90%);
+  margin: auto;
+
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: var(--transition);
+
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--accent);
+
+  transition: var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after {
+  width: 100%;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+  background: #1f1f1f;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+/* ==========================
+   MOBILE MENU BUTTON
+========================== */
+
+.menu-toggle {
+  display: none;
+
+  background: none;
+
+  border: none;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+/* ==========================
+   MOBILE NAV
+========================== */
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    z-index: -999;
+    top: 80px;
+
+    left: 0;
+
+    width: 100%;
+
+    background: var(--surface);
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 30px 0;
+
+    transform: translateY(-150%);
+
+    transition: 0.4s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+}
+
+/* ==========================
+   SCROLL ANIMATION
+========================== */
+
+.about,
+.card,
+.hours-box,
+.contact-grid,
+iframe,
+.menu-card {
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition: 0.7s ease;
+}
+
+.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
