@@ -168,6 +168,7 @@ footer {
   font-size: 2rem;
 
   cursor: pointer;
+  color: var(--primary);
 }
 
 /* ==========================
