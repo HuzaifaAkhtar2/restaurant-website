@@ -8,6 +8,8 @@ const navLinks = document.querySelector(".nav-links");
 if (menuToggle) {
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("ri-menu-line");
+    menuToggle.classList.toggle("ri-close-line");
   });
 }
 
@@ -20,6 +22,8 @@ const links = document.querySelectorAll(".nav-links a");
 links.forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
+    menuToggle.classList.add(".ri-menu-line")
+    menuToggle.classList.remove(".ri-close-line")
   });
 });
 
