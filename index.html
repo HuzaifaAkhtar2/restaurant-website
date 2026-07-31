@@ -41,6 +41,11 @@
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="assets/hero-img-main.webp" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -171,6 +176,10 @@
           <img
             src="assets/restaurant-interior-design.webp"
             alt="Restaurant Interior"
+            loading="lazy"
+            decoding="async"
+            width="690"
+            height="1035"
           />
         </div>
 
@@ -238,7 +247,7 @@
 
       <!-- Menu Preview -->
 
-      <section class="menu-preview section" id="menu-preview">
+      <section class="menu-preview" id="menu-preview">
         <div class="container">
           <div class="section-heading">
             <h2>Explore Our Menu</h2>
@@ -250,10 +259,17 @@
 
           <div class="menu-preview-grid">
             <div class="menu-card">
-              <img src="assets/kebab.webp" alt="Grilled Turkish Kebabs" />
+              <img
+                src="assets/kebab.webp"
+                alt="Grilled Turkish Kebabs"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                width="1600"
+              />
 
               <div class="menu-card-content">
-                <h4>Kebabs</h4>
+                <h3>Kebabs</h3>
                 <p>
                   Freshly grilled kebabs packed with authentic Turkish flavours.
                 </p>
@@ -261,10 +277,17 @@
             </div>
 
             <div class="menu-card">
-              <img src="assets/fish.webp" alt="Fresh Fish" />
+              <img
+                src="assets/fish.webp"
+                alt="Fresh Fish"
+                loading="lazy"
+                decoding="async"
+                width="1707"
+                height="2560"
+              />
 
               <div class="menu-card-content">
-                <h4>Fresh Fish</h4>
+                <h3>Fresh Fish</h3>
                 <p>
                   Delicious seafood dishes prepared fresh and served with care.
                 </p>
@@ -272,10 +295,17 @@
             </div>
 
             <div class="menu-card">
-              <img src="assets/burger.webp" alt="Fresh Burgers" />
+              <img
+                src="assets/burger.webp"
+                alt="Fresh Burgers"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                width="1800"
+              />
 
               <div class="menu-card-content">
-                <h4>Burgers</h4>
+                <h3>Burgers</h3>
                 <p>
                   Juicy burgers made with quality ingredients and bold flavours.
                 </p>
@@ -283,10 +313,17 @@
             </div>
 
             <article class="menu-card">
-              <img src="assets/dessert.webp" alt="Delicious Desserts" />
+              <img
+                src="assets/dessert.webp"
+                alt="Delicious Desserts"
+                loading="lazy"
+                decoding="async"
+                width="1778"
+                height="2700"
+              />
 
               <div class="menu-card-content">
-                <h4>Desserts</h4>
+                <h3>Desserts</h3>
                 <p>
                   Finish your meal with a selection of delicious sweet treats.
                 </p>
@@ -394,6 +431,7 @@
             </div>
           </div>
           <iframe
+            title="restaurant-location"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39699.518245559375!2d-0.1315823!3d51.5458668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ce4da0120c1%3A0x4b5ccc4caddbeccf!2sBritannia%20Restaurant!5e0!3m2!1sen!2s!4v1785406264985!5m2!1sen!2s"
             allowfullscreen=""
             loading="lazy"
