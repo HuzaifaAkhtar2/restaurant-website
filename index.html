@@ -3,23 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Britannia Restaurant</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#c9a227" />
+    <meta
+      name="description"
+      content="Enjoy authentic Turkish cuisine at Britannia Restaurant in Hackney, London. Fresh kebabs, fish dishes, takeaway, delivery and dine-in available."
+    />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <meta property="og:title" content="Britannia Restaurant" />
+    <meta
+      property="og:description"
+      content="Authentic Turkish cuisine in Hackney."
+    />
+    <meta property="og:image" content="assets/hero-img-main.webp" />
+    <meta property="og:type" content="website" />
+    <title>
+      Britannia Restaurant | Authentic Turkish Restaurant in Hackney, London
+    </title>
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "@id": "https://huzaifaakhtar2.github.io/restaurant-website/#restaurant",
+        "name": "Britannia Restaurant",
+        "url": "https://huzaifaakhtar2.github.io/restaurant-website/",
+        "image": "https://huzaifaakhtar2.github.io/restaurant-website/assets/restaurant-interior-design.webp",
+        "logo": "https://huzaifaakhtar2.github.io/restaurant-website/favicon/favicon-32x32.png",
+        "description": "Authentic Turkish restaurant in Hackney, London, serving freshly prepared kebabs, fish, and traditional Turkish cuisine for dine-in, takeaway, and delivery.",
+        "telephone": "+442085334712",
+        "email": "info@example.com",
+        "servesCuisine": ["Turkish"],
+        "priceRange": "1£-10£ per person",
+        "acceptsReservations": true,
+        "currenciesAccepted": "GBP",
+        "paymentAccepted": [
+          "Cash",
+          "Credit Card",
+          "Debit Card",
+          "NFC Mobile Payments"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "299 Mare Street",
+          "addressLocality": "Hackney",
+          "addressRegion": "London",
+          "postalCode": "E8 1EJ",
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.5458668,
+          "longitude": -0.0553646
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+            "opens": "11:00",
+            "closes": "02:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "11:00",
+            "closes": "02:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Friday", "Saturday"],
+            "opens": "11:00",
+            "closes": "04:00"
+          }
+        ],
+        "hasMenu": "https://huzaifaakhtar2.github.io/restaurant-website/menu.html",
+        "sameAs": ["https://maps.google.com/?cid=5431484384648525007"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://huzaifaakhtar2.github.io/restaurant-website/#website",
+        "url": "https://huzaifaakhtar2.github.io/restaurant-website/",
+        "name": "Britannia Restaurant"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://huzaifaakhtar2.github.io/restaurant-website/"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -46,7 +153,8 @@
           <h1>Fresh Turkish Flavours, Served with Tradition</h1>
 
           <p>
-            Enjoy authentic Turkish kebabs, fresh fish, and delicious homemade dishes in the heart of Hackney.
+            Enjoy authentic Turkish kebabs, fresh fish, and delicious homemade
+            dishes in the heart of Hackney.
           </p>
 
           <div class="buttons">
@@ -61,7 +169,7 @@
       <section class="about container">
         <div class="about-image">
           <img
-            src="assets/Restaurant_Interior_Design.webp"
+            src="assets/restaurant-interior-design.webp"
             alt="Restaurant Interior"
           />
         </div>
@@ -70,14 +178,24 @@
           <h2>About Us</h2>
 
           <p>
-            Welcome to Britannia Restaurant, your destination for authentic Turkish cuisine in the heart of Hackney, London. We take pride in serving freshly prepared meals inspired by the rich flavours of Turkey, using quality ingredients and traditional cooking techniques.
+            Welcome to Britannia Restaurant, your destination for authentic
+            Turkish cuisine in the heart of Hackney, London. We take pride in
+            serving freshly prepared meals inspired by the rich flavours of
+            Turkey, using quality ingredients and traditional cooking
+            techniques.
           </p>
 
           <p>
-            Whether you're craving succulent kebabs, fresh fish, or a quick bite, our menu offers something for everyone. With a relaxed atmosphere, friendly service, and options for dine-in, takeaway, and delivery, we strive to provide a dining experience that keeps our customers coming back.
+            Whether you're craving succulent kebabs, fresh fish, or a quick
+            bite, our menu offers something for everyone. With a relaxed
+            atmosphere, friendly service, and options for dine-in, takeaway, and
+            delivery, we strive to provide a dining experience that keeps our
+            customers coming back.
           </p>
           <p>
-            Whether you're enjoying lunch with friends, dinner with family, or a meal on the go, Britannia Restaurant is committed to serving delicious food with genuine Turkish hospitality.
+            Whether you're enjoying lunch with friends, dinner with family, or a
+            meal on the go, Britannia Restaurant is committed to serving
+            delicious food with genuine Turkish hospitality.
           </p>
         </div>
       </section>
@@ -86,45 +204,166 @@
 
       <section class="features">
         <h2>Why Choose Britannia Restaurant</h2>
+        <p id="features-desc">
+          Discover what makes Britannia Restaurant the perfect place for your
+          next meal.
+        </p>
 
         <div class="feature-grid">
-          <div class="card">
+          <div class="feature-card">
             <h3>Freshly Prepared Meals</h3>
 
             <p>Freshly prepared dishes made with care every day.</p>
           </div>
 
-          <div class="card">
+          <div class="feature-card">
             <h3>Quality Ingredients</h3>
 
             <p>Quality ingredients for authentic Turkish flavours.</p>
           </div>
 
-          <div class="card">
+          <div class="feature-card">
             <h3>Friendly Service</h3>
 
             <p>Friendly staff dedicated to making every visit enjoyable.</p>
           </div>
 
-          <div class="card">
+          <div class="feature-card">
             <h3>Turkish Cuisine</h3>
 
             <p>Traditional Turkish kebabs, fish, and more.</p>
           </div>
-          
+        </div>
+      </section>
+
+      <!-- Menu Preview -->
+
+      <section class="menu-preview section" id="menu-preview">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Explore Our Menu</h2>
+            <p>
+              Discover a delicious selection of authentic Turkish dishes,
+              freshly prepared with quality ingredients.
+            </p>
+          </div>
+
+          <div class="menu-preview-grid">
+            <div class="menu-card">
+              <img src="assets/kebab.webp" alt="Grilled Turkish Kebabs" />
+
+              <div class="menu-card-content">
+                <h4>Kebabs</h4>
+                <p>
+                  Freshly grilled kebabs packed with authentic Turkish flavours.
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <img src="assets/fish.webp" alt="Fresh Fish" />
+
+              <div class="menu-card-content">
+                <h4>Fresh Fish</h4>
+                <p>
+                  Delicious seafood dishes prepared fresh and served with care.
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-card">
+              <img src="assets/burger.webp" alt="Fresh Burgers" />
+
+              <div class="menu-card-content">
+                <h4>Burgers</h4>
+                <p>
+                  Juicy burgers made with quality ingredients and bold flavours.
+                </p>
+              </div>
+            </div>
+
+            <article class="menu-card">
+              <img src="assets/dessert.webp" alt="Delicious Desserts" />
+
+              <div class="menu-card-content">
+                <h4>Desserts</h4>
+                <p>
+                  Finish your meal with a selection of delicious sweet treats.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <a href="menu.html" class="btn"> View Full Menu </a>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section class="testimonials">
+        <div class="container">
+          <h2>What Our Customers Say</h2>
+          <p class="desc">
+            Discover why our guests love dining at Britannia Restaurant.
+          </p>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <i class="ri-double-quotes-l"></i>
+              <p class="testimonial-text">
+                Amazing Turkish food with generous portions. The kebabs were
+                full of flavour, and the staff were incredibly welcoming.
+              </p>
+
+              <span>— Google Review</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <i class="ri-double-quotes-l"></i>
+              <p class="testimonial-text">
+                One of the best Turkish restaurants in Hackney. Fresh
+                ingredients, excellent service, and a wonderful atmosphere.
+              </p>
+
+              <span>— Google Review</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <i class="ri-double-quotes-l"></i>
+              <p class="testimonial-text">
+                Delicious food, friendly staff, and quick service. We'll
+                definitely be coming back again.
+              </p>
+
+              <span>— Google Review</span>
+            </div>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/place/Britannia+Restaurant/@51.5458676,-0.0560083,19z/data=!4m17!1m8!3m7!1s0x48761ce4da0120c1:0x4b5ccc4caddbeccf!2sBritannia+Restaurant!8m2!3d51.5458668!4d-0.0553646!10e9!16s%2Fg%2F11z6ft0w3!3m7!1s0x48761ce4da0120c1:0x4b5ccc4caddbeccf!8m2!3d51.5458668!4d-0.0553646!9m1!1b1!16s%2Fg%2F11z6ft0w3?entry=ttu&g_ep=EgoyMDI2MDcyOC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            class="btn"
+          >
+            Read More Reviews
+          </a>
         </div>
       </section>
 
       <!-- Hours -->
 
-      <section class="hours container">
-        <h2>Opening Hours</h2>
-        <p class="timezone-paragraph">All times are in London (UK) local time.</p>
+      <section class="hours">
+        <div class="container">
+          <h2>Opening Hours</h2>
+          <p class="desc">All times are in London (UK) local time.</p>
 
-        <div class="hours-box">
-          <p>Sunday - Wednesday <span>11:00 AM - 2:00 AM</span></p>
-          <p>Thursday <span>11:00 AM - 2:30 AM</span></p>
-          <p>Friday and Saturday <span>11:00 AM - 4:00 AM</span></p>
+          <div class="hours-box">
+            <p>Sunday - Wednesday <span>11:00 AM - 2:00 AM</span></p>
+            <p>Thursday <span>11:00 AM - 2:30 AM</span></p>
+            <p>Friday and Saturday <span>11:00 AM - 4:00 AM</span></p>
+          </div>
         </div>
       </section>
 
@@ -133,6 +372,10 @@
       <section class="contact" id="contact">
         <div class="container">
           <h2>Contact Us</h2>
+          <p id="contact-desc">
+            We'd love to hear from you. Get in touch or visit us for your next
+            dining experience.
+          </p>
 
           <div class="contact-grid">
             <div>
@@ -150,14 +393,18 @@
               <p>info@example.com</p>
             </div>
           </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39699.518245559375!2d-0.1315823!3d51.5458668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ce4da0120c1%3A0x4b5ccc4caddbeccf!2sBritannia%20Restaurant!5e0!3m2!1sen!2s!4v1785406264985!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39699.518245559375!2d-0.1315823!3d51.5458668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ce4da0120c1%3A0x4b5ccc4caddbeccf!2sBritannia%20Restaurant!5e0!3m2!1sen!2s!4v1785406264985!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 Britannia Restaurant. All Rights Reserved.</p>
+      <p>&copy; 2026 Britannia Restaurant. All Rights Reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>

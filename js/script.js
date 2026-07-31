@@ -22,8 +22,8 @@ const links = document.querySelectorAll(".nav-links a");
 links.forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
-    menuToggle.classList.add(".ri-menu-line")
-    menuToggle.classList.remove(".ri-close-line")
+    menuToggle.classList.add(".ri-menu-line");
+    menuToggle.classList.remove(".ri-close-line");
   });
 });
 
