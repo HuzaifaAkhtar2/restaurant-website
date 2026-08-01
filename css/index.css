@@ -84,13 +84,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  overflow: hidden;
 }
 
 .about img {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  height: 700px;
-  width: auto;
+  height: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .about h2 {
@@ -350,17 +352,8 @@ iframe {
    ANIMATIONS
 ========================== */
 
-.card,
-.about img,
-.hours-box,
-iframe {
+.card {
   transition: var(--transition);
-}
-
-.about img:hover,
-.hours-box:hover,
-iframe:hover {
-  transform: scale(1.02);
 }
 
 /* ==========================
