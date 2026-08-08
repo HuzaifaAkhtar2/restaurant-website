@@ -26,7 +26,6 @@ The website provides information about the restaurant, its menu, services, openi
 
 - Home
 - Menu
-- Contact
 
 ## Project Purpose
 
